@@ -1,0 +1,96 @@
+-- Secret Bypass Demo UI
+-- Script inofensivo para Delta Executor
+
+-- Criando a GUI
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "SecretBypass"
+ScreenGui.Parent = game:GetService("CoreGui")
+
+local MainFrame = Instance.new("Frame")
+MainFrame.Size = UDim2.new(0, 400, 0, 220)
+MainFrame.Position = UDim2.new(0.5, -200, 0.5, -110)
+MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainFrame.BorderSizePixel = 0
+MainFrame.Active = true
+MainFrame.Draggable = true
+MainFrame.Parent = ScreenGui
+
+-- UICorner
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 12)
+corner.Parent = MainFrame
+
+-- Título
+local Title = Instance.new("TextLabel")
+Title.Size = UDim2.new(1, 0, 0, 40)
+Title.BackgroundTransparency = 1
+Title.Text = "Secret Bypass"
+Title.Font = Enum.Font.GothamBold
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 24
+Title.Parent = MainFrame
+
+-- Caixa de texto (Key)
+local KeyBox = Instance.new("TextBox")
+KeyBox.Size = UDim2.new(0.8, 0, 0, 40)
+KeyBox.Position = UDim2.new(0.1, 0, 0.3, 0)
+KeyBox.PlaceholderText = "Enter Key"
+KeyBox.Text = ""
+KeyBox.Font = Enum.Font.Gotham
+KeyBox.TextSize = 18
+KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+KeyBox.BorderSizePixel = 0
+KeyBox.Parent = MainFrame
+
+local keyCorner = Instance.new("UICorner")
+keyCorner.CornerRadius = UDim.new(0, 8)
+keyCorner.Parent = KeyBox
+
+-- Mensagem de status
+local Status = Instance.new("TextLabel")
+Status.Size = UDim2.new(1, 0, 0, 30)
+Status.Position = UDim2.new(0, 0, 0.55, 0)
+Status.BackgroundTransparency = 1
+Status.Text = ""
+Status.Font = Enum.Font.Gotham
+Status.TextSize = 18
+Status.TextColor3 = Color3.fromRGB(255, 50, 50)
+Status.Parent = MainFrame
+
+-- Função botão estilizado
+local function CreateButton(text, color, pos)
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(0.4, 0, 0, 40)
+    btn.Position = pos
+    btn.Text = text
+    btn.Font = Enum.Font.GothamBold
+    btn.TextSize = 18
+    btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    btn.BackgroundColor3 = color
+    btn.Parent = MainFrame
+    
+    local btnCorner = Instance.new("UICorner")
+    btnCorner.CornerRadius = UDim.new(0, 8)
+    btnCorner.Parent = btn
+    
+    return btn
+end
+
+-- Botões
+local GetKeyBtn = CreateButton("Get Key", Color3.fromRGB(0, 136, 255), UDim2.new(0.1, 0, 0.75, 0))
+local VerifyKeyBtn = CreateButton("Verify Key", Color3.fromRGB(255, 136, 0), UDim2.new(0.5, 0, 0.75, 0))
+
+-- Função dos botões
+GetKeyBtn.MouseButton1Click:Connect(function()
+    if setclipboard then
+        setclipboard("[test1]")
+    end
+    Status.Text = "Key copiada!"
+    Status.TextColor3 = Color3.fromRGB(50, 255, 50)
+end)
+
+VerifyKeyBtn.MouseButton1Click:Connect(function()
+    Status.Text = "Key inválido"
+    Status.TextColor3 = Color3.fromRGB(255, 50, 50)
+end)
