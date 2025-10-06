@@ -84,7 +84,7 @@ local VerifyKeyBtn = CreateButton("Verify Key", Color3.fromRGB(255, 136, 0), UDi
 -- Função dos botões
 GetKeyBtn.MouseButton1Click:Connect(function()
     if setclipboard then
-        setclipboard("https://beamish-manatee-80a2a2.netlify.app/")
+        setclipboard("qhttps://deluxe-snickerdoodle-3defba.netlify.app/")
     end
     Status.Text = "Key copiada!"
     Status.TextColor3 = Color3.fromRGB(50, 255, 50)
