@@ -1,53 +1,96 @@
-local A={
-121,124,112,110,121,45,96,112,127,114,114,123,84,130,118,74,86,123,128,129,
-110,123,112,114,59,123,114,132,53,47,96,112,127,114,114,123,84,130,118,47,
-54,23,96,112,127,114,114,123,84,130,118,59,91,110,122,114,74,47,96,114,
-112,127,114,129,79,134,125,110,128,128,47,23,96,112,127,114,114,123,84,130,
-118,59,93,110,127,114,123,129,74,116,110,122,114,71,84,114,129,96,114,127,
-131,118,112,114,53,47,80,124,127,114,84,130,118,47,54,23,121,124,112,110,
-121,45,90,110,118,123,83,127,110,122,114,74,86,123,128,129,110,123,112,114,
-59,123,114,132,53,47,83,127,110,122,114,47,54,23,90,110,118,123,83,127,
-110,122,114,59,96,118,135,114,74,98,81,118,122,63,59,123,114,132,53,61,
-57,65,61,61,57,61,57,63,63,61,54,23,90,110,118,123,83,127,110,122,
-114,59,93,124,128,118,129,118,124,123,74,98,81,118,122,63,59,123,114,132,
-53,61,59,66,57,58,63,61,61,57,61,59,66,57,58,62,62,61,54,23,
-90,110,118,123,83,127,110,122,114,59,79,110,112,120,116,127,124,130,123,113,
-80,124,121,124,127,64,74,80,124,121,124,127,64,59,1,109,111,117,114,119,
-110,127,110,123,114,59,96,112,127,114,114,123,84,130,118,47,54,23,90,110,
-118,123,83,127,110,122,114,59,96,118,135,114,74,98,81,118,122,63,59,123,
-114,132,53,47,96,106,120,112,127,114,114,123,84,130,118,59,96,118,135,114,
-74,86,123,128,129,110,123,112,114,59,123,114,132,53,47,96,106,120,112,127,
-114,114,123,84,130,118,47,54,23,121,124,112,110,121,45,96,112,127,114,114,
-123,84,130,118,74,116,110,122,114,71,84,114,129,96,114,127,131,118,112,114,
-53,47,80,124,127,114,84,130,118,47,54,23,121,124,112,110,121,45,96,112,
-127,114,114,123,84,130,118,59,96,118,135,114,74,98,81,118,122,63,59,123,
-114,132,53,47,96,112,127,114,114,123,84,130,118,47,54,23,88,110,118,123,
-83,127,110,122,114,59,96,118,135,114,74,86,123,128,129,110,123,112,114,59,
-123,114,132,53,47,83,127,110,122,114,47,54,23,96,118,135,114,74,86,123,128,
-129,110,123,112,114,59,123,114,132,53,47,96,112,127,114,114,123,84,130,118,
-47,54,23,123,114,132,53,47,96,112,127,114,114,123,84,130,118,59,91,110,
-122,114,74,47,96,114,112,127,114,129,79,134,125,110,128,128,47,23,96,112,
-127,114,114,123,84,130,118,59,96,118,135,114,74,98,81,118,122,63,59,123,
-114,132,53,47,96,112,127,114,114,123,84,130,118,47,54,23,121,124,112,110,
-121,45,90,110,118,123,83,127,110,122,114,74,86,123,128,129,110,123,112,114,
-59,123,114,132,53,47,96,106,120,112,127,114,114,123,84,130,118,47,54,23,
-96,118,135,114,74,86,123,128,129,110,123,112,114,59,123,114,132,53,47,96,
-112,127,114,114,123,84,130,118,47,54,23,90,110,118,123,83,127,110,122,114,
-59,93,110,127,114,123,129,74,116,110,122,114,71,84,114,129,96,114,127,131,
-118,112,114,53,47,80,124,127,114,84,130,118,47,54,23,121,124,112,110,121,
-45,96,112,127,114,114,123,84,130,118,59,96,118,135,114,74,98,81,118,122,
-63,59,123,114,132,53,47,96,112,127,114,114,123,84,130,118,59,93,110,127,
-114,123,129,74,116,110,122,114,71,84,114,129,96,114,127,131,118,112,114,53,
-47,80,124,127,114,84,130,118,47,54,23,121,124,112,110,121,45,96,112,127,
-114,114,123,84,130,118,59,96,118,135,114,74,86,123,128,129,110,123,112,114,
-59,123,114,132,53,47,96,112,127,114,114,123,84,130,118,47,54,23,90,110,
-118,123,83,127,110,122,114,59,96,118,135,114,74,98,81,118,122,63,59,123,
-114,132,53,47,96,112,127,114,114,123,84,130,118,47,54,23,121,124,112,110,
-121,45,96,112,127,114,114,123,84,130,118,74,86,123,128,129,110,123,112,114,
-59,123,114,132,53,47,96,112,127,114,114,123,84,130,118,47,54,23,90,110,
-118,123,83,127,110,122,114,59,96,118,135,114,74,86,123,128,129,110,123,112,
-114,59,123,114,132,53,47,96,112,127,114,114,123,84,130,118,47,54,23,1
-}
-local S=""
-for i=1,#A do S=S..string.char(A[i]-13) end
-(local L=loadstring or load)(S)()
+-- Secret Bypass Demo UI  
+-- Script inofensivo para Delta Executor  
+  
+-- Criando a GUI  
+local ScreenGui = Instance.new("ScreenGui")  
+ScreenGui.Name = "SecretBypass"  
+ScreenGui.Parent = game:GetService("CoreGui")  
+  
+local MainFrame = Instance.new("Frame")  
+MainFrame.Size = UDim2.new(0, 400, 0, 220)  
+MainFrame.Position = UDim2.new(0.5, -200, 0.5, -110)  
+MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)  
+MainFrame.BorderSizePixel = 0  
+MainFrame.Active = true  
+MainFrame.Draggable = true  
+MainFrame.Parent = ScreenGui  
+  
+-- UICorner  
+local corner = Instance.new("UICorner")  
+corner.CornerRadius = UDim.new(0, 12)  
+corner.Parent = MainFrame  
+  
+-- Título  
+local Title = Instance.new("TextLabel")  
+Title.Size = UDim2.new(1, 0, 0, 40)  
+Title.BackgroundTransparency = 1  
+Title.Text = "Secret Bypass"  
+Title.Font = Enum.Font.GothamBold  
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)  
+Title.TextSize = 24  
+Title.Parent = MainFrame  
+  
+-- Caixa de texto (Key)  
+local KeyBox = Instance.new("TextBox")  
+KeyBox.Size = UDim2.new(0.8, 0, 0, 40)  
+KeyBox.Position = UDim2.new(0.1, 0, 0.3, 0)  
+KeyBox.PlaceholderText = "Enter Key"  
+KeyBox.Text = ""  
+KeyBox.Font = Enum.Font.Gotham  
+KeyBox.TextSize = 18  
+KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)  
+KeyBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)  
+KeyBox.BorderSizePixel = 0  
+KeyBox.Parent = MainFrame  
+  
+local keyCorner = Instance.new("UICorner")  
+keyCorner.CornerRadius = UDim.new(0, 8)  
+keyCorner.Parent = KeyBox  
+  
+-- Mensagem de status  
+local Status = Instance.new("TextLabel")  
+Status.Size = UDim2.new(1, 0, 0, 30)  
+Status.Position = UDim2.new(0, 0, 0.55, 0)  
+Status.BackgroundTransparency = 1  
+Status.Text = ""  
+Status.Font = Enum.Font.Gotham  
+Status.TextSize = 18  
+Status.TextColor3 = Color3.fromRGB(255, 50, 50)  
+Status.Parent = MainFrame  
+  
+-- Função botão estilizado  
+local function CreateButton(text, color, pos)  
+    local btn = Instance.new("TextButton")  
+    btn.Size = UDim2.new(0.4, 0, 0, 40)  
+    btn.Position = pos  
+    btn.Text = text  
+    btn.Font = Enum.Font.GothamBold  
+    btn.TextSize = 18  
+    btn.TextColor3 = Color3.fromRGB(255, 255, 255)  
+    btn.BackgroundColor3 = color  
+    btn.Parent = MainFrame  
+      
+    local btnCorner = Instance.new("UICorner")  
+    btnCorner.CornerRadius = UDim.new(0, 8)  
+    btnCorner.Parent = btn  
+      
+    return btn  
+end  
+  
+-- Botões  
+local GetKeyBtn = CreateButton("Get Key", Color3.fromRGB(0, 136, 255), UDim2.new(0.1, 0, 0.75, 0))  
+local VerifyKeyBtn = CreateButton("Verify Key", Color3.fromRGB(255, 136, 0), UDim2.new(0.5, 0, 0.75, 0))  
+  
+-- Função dos botões  
+GetKeyBtn.MouseButton1Click:Connect(function()  
+    if setclipboard then  
+        setclipboard("https://deluxe-snickerdoodle-3defba.netlify.app/")  
+    end  
+    Status.Text = "Key copiada!"  
+    Status.TextColor3 = Color3.fromRGB(50, 255, 50)  
+end)  
+  
+VerifyKeyBtn.MouseButton1Click:Connect(function()  
+    Status.Text = "Key inválido"  
+    Status.TextColor3 = Color3.fromRGB(255, 50, 50)  
+end)
